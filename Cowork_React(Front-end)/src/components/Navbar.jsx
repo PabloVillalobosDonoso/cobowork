@@ -18,7 +18,7 @@ const Navbar = () => {
   //   }
   // }, []);
   const userJSON = localStorage.getItem("usuario");
-  const nombreUsuario = userJSON ? JSON.parse(userJSON).correo : "User";
+  const nombreUsuario = userJSON ? JSON.parse(userJSON).nombre : "User";
 
   const handleLogout = () => {
     logout(); // limpia datos

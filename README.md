@@ -19,9 +19,9 @@ Este repositorio contiene tanto el frontend como el backend de la aplicación.
 ## 👥 Integrantes del equipo
 
 - Pablo Villalobos
-- Alan Nuñez
-- Tanyia Carrillo
-- Jospe Correa
+- Allan Núñez
+- Tanya Carrillo
+- José Correa
 - Lidia Henriquez
 
 ---
