@@ -1,0 +1,29 @@
+/*SISTEMA DE COLORES - REGLA 60-30-10
+   60% - Gris Perla (#f5f5f5, #e8e8e8) - Backgrounds, espacios principales
+   30% - Negro/Gris Oscuro (#1a1a1a, #2d2d2d) - Textos, estructuras, navbar
+   10% - Dorado (#d4af37, #b8960c) - Acentos, botones, highlights */
+
+:root {
+  /* Colores principales - 60% Gris Perla */
+  --color-background-primary: #f5f5f5;
+  --color-background-secondary: #e8e8e8;
+  --color-background-light: #fafafa;
+
+  /* Colores secundarios - 30% Negro/Gris Oscuro */
+  --color-dark-primary: #1a1a1a;
+  --color-dark-secondary: #2d2d2d;
+  --color-text-primary: #2d2d2d;
+  --color-text-muted: #6c757d;
+
+  /* Colores de acento - 10% Dorado */
+  --color-accent-primary: #d4af37;
+  --color-accent-secondary: #b8960c;
+  --color-accent-hover: #c9a633;
+
+  /* Sombras y transiciones */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.15);
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+}

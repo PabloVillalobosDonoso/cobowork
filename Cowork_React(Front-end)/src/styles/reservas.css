@@ -1,0 +1,78 @@
+/* TITULO */
+.titulo-reservas h2 {
+  letter-spacing: 1px;
+}
+
+.subtitle-reservas {
+  color: #d1d5db;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.divider-reservas {
+  width: 120px;
+  margin: 20px auto;
+  border: 2px solid #f5a623;
+  opacity: 1;
+}
+
+/* TABS */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.custom-tabs {
+  border: none;
+  gap: 15px;
+}
+
+.custom-tabs .nav-link {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  background: rgba(236, 0, 0, 0.08);
+  color: #fff;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.custom-tabs .nav-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.custom-tabs .nav-link.active {
+  background: #f5a623;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(245, 166, 35, 0.35);
+}
+
+/* MENSAJE VACÍO */
+.empty-reservas {
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  font-size: 1.1rem;
+}
+
+/* CARDS */
+.row.g-4 {
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .custom-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .custom-tabs .nav-link {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}

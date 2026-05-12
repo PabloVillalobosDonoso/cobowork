@@ -1,0 +1,56 @@
+@import "./colores.css";
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--color-dark-primary);
+  color: white;
+  margin-top: auto;
+  position: relative;
+}
+
+.footer .text-muted {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: var(--transition-fast);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--color-accent-primary);
+}
+
+.footer h5,
+.footer h6 {
+  color: var(--color-accent-primary);
+  font-weight: 600;
+}
+
+.footer hr {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-links a {
+  display: inline-block;
+  transition: var(--transition-fast);
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-navbar {
+  width: 200px;
+  height: auto;
+}

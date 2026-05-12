@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* capa oscura + blur */
+body::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.auth-container {
+  position: relative;
+  z-index: 1;
+
+  width: 360px;
+  padding: 2rem;
+  border-radius: 20px;
+
+  /* color fondo */
+  background: #1c1c1c;
+
+  /* borde dorado suave */
+  border: 1px solid rgba(212, 175, 55, 0.3);
+
+  color: #d4af37;
+  text-align: center;
+
+  transition: 0.3s ease;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+}
+
+.auth-container:hover {
+  transform: scale(1.03); /*¿eliminar?*/
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+  border: 1px solid #d4af37;
+}
+
+input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  background: #2a2a2a;
+  color: white;
+
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/*  HOVER */
+input:hover {
+  border: 1px solid rgba(212, 175, 55, 0.5);
+}
+
+/*  FOCUS (cuando escribes) */
+input:focus {
+  border: 1px solid #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  border-radius: 10px;
+  border: none;
+
+  background: #d4af37;
+  color: black;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  border-radius: 15px;
+}
+
+/*  hover suave */
+.button:hover {
+  background: #f1c40f;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+/* efecto cuando haces click */
+button:active {
+  transform: scale(0.97);
+  box-shadow: none;
+}
+
+.error {
+  color: #ff4d4d;
+}
+
+a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-link {
+  color: #d4af37;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-link:hover {
+  color: #f1c40f;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.7);
+}
+
+/* boton de cerrar sesion (temporal) */
+
+.logout-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+
+  background: transparent;
+  color: #d4af37;
+
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* hover suave */
+.logout-btn:hover {
+  background: #d4af37;
+  color: black;
+}
+
+/* Mejor adaptación en pantallas pequeñas */
+@media (max-width: 576px) {
+  .auth-container {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Evita que el body rompa layout en móviles */
+body {
+  min-height: 100vh;
+}
+
+.auth-page {
+  min-height: 100vh;
+  background: url("../assets/img/login.webp") no-repeat center center/cover;
+  position: relative;
+}
+
+/* capa blur */
+.auth-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
