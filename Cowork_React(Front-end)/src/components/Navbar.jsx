@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 import { logout } from "../services/authService";
 import { useNavigate } from "react-router";
 //import { useState, useEffect } from "react";
-import "../styles/Navbar.css";
+import "../styles/navbar.css";
 import logo from "../assets/img/cobowork.png";
 
 const Navbar = () => {
