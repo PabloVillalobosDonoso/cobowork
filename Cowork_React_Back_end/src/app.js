@@ -16,14 +16,7 @@ const app = express();
 
 //middlewares incorporados(express) y de terceros
 app.use(express.json());
-app.use(cors({
-    origin: [
-    "http://localhost:5173",
-    "https://cobowork-wznk.vercel.app"
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"]
-}));
+app.use(cors());
 app.use(morgan("dev"));
 
 //rutas
