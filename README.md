@@ -10,8 +10,8 @@ Este repositorio contiene tanto el frontend como el backend de la aplicación.
 
 ```bash
 /
-├── frontend
-└── backend
+├── Cowork_React(Front-end)
+└── Cowork_React_Back_end
 ```
 
 ---
