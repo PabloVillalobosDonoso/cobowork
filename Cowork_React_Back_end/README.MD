@@ -88,6 +88,10 @@ Instalar dependencias:
 npm install
 ```
 
+```bash
+npm install dotenv cors morgan
+```
+
 ---
 
 ## ▶️ Ejecución del proyecto
